@@ -40,6 +40,22 @@ nav{
     color: white;
     padding: 10px 20px;
     font-size: 20px;
+    position: relative;
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid red;
+    transition: 0.4s ease-in-out;
+}
+
+.menu a:hover:before{
+    width: 90%;
 }
 
 .login a{
@@ -47,8 +63,15 @@ nav{
     color: white;
     padding: 10px 25px;
     font-size: 20px;
+    letter-spacing: 1px;
     background-color: red;
     border-radius: 8px;
+    transition: 0.4s;
+}
+
+.login a:hover{
+    background: transparent;
+    border: solid 2px red;
 }
 
 .section2{
@@ -77,8 +100,14 @@ nav{
     color: white;
     padding: 10px 20px;
     font-size: 20px;
+    letter-spacing: 1px;
     background-color: red;
     border-radius: 8px;
+    transition: 0.4s;
 }
 
+.section2 a:hover{
+    background: transparent;
+    border: solid 2px red;
+}
 
